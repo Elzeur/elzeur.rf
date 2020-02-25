@@ -1,0 +1,4 @@
+User-Agent: *
+
+Host: www.xn--e1adlwo0d.xn--p1ai
+sitemap: http://www.xn--e1adlwo0d.xn--p1ai/sitemap.xml
