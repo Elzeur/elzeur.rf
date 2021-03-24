@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" $if(dir)$dir="$dir$"$endif$ lang="$lang$" xml:lang="$lang$">
+<head>
+
+	<title>$pagetitle$ — $subtitle$</title>
+
+$if(description)$
+	<meta name="description" content="$description$" />
+$endif$
+
+$for(author-meta)$
+	<meta name="author" content="$author-meta$" />
+$endfor$
+
+$if(date-meta)$
+	<meta name="dcterms.created" content="$date-meta$" />
+$endif$
+
+$if(ModifiedDate)$
+	<meta name="dcterms.modified" content="$ModifiedDate$" />
+$endif$
+
+$if(keywords)$
+	<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+$for(css)$
+	<link rel="stylesheet" href="$css$" type="text/css" />
+$endfor$
+
+$if(HomePage)$
+	<link href="/rss.rss" type="application/rss+xml" rel="alternate" title="RSS 2.00" />
+$endif$
+
+$if(math)$
+  $math$
+$endif$
+
+$for(header-includes)$
+  $header-includes$
+$endfor$
+
+</head>
+
+<body>
+
+<header id="MainHeader">
+	
+	<nav id="MainMenu">
+
+$if(HomePage)$
+			<p>Глагне</p>
+$else$
+			<p><a href="/">Глагне</a></p>
+$endif$
+		
+$if(WebLogsDefaultPage)$
+			<p>Микроблоги</p>
+$else$
+			<p><a href="/weblogs/">Микроблоги</a></p>
+$endif$
+		
+$if(ProgrammingDefaultPage)$
+			<p>Программирование</p>
+$else$
+			<p><a href="/programming/">Программирование</a></p>
+$endif$
+		
+$if(PoliticDefaultPage)$
+			<p>Политика</p>
+$else$
+			<p><a href="/politics/">Политика</a></p>
+$endif$
+
+$if(FinanceDefaultPage)$
+			<p>Финансы</p>
+$else$
+			<p><a href="/finance/">Финансы</a></p>
+$endif$
+
+$if(CookingDefaultPage)$
+			<p>Еда</p>
+$else$
+			<p><a href="/cooking/">Еда</a></p>
+$endif$
+
+$if(GodvilleDefaultPage)$
+			<p>Годвилль</p>
+$else$
+			<p><a href="/godville/">Годвилль</a></p>
+$endif$
+
+$if(GodvilleDefaultPage)$
+			<p>Обо мне</p>
+$else$
+			<p><a href="/about/">Обо мне</a></p>
+$endif$
+
+	</nav>
+	
+</header>
+
+<main id="MainContent">
+$for(include-before)$
+$include-before$
+$endfor$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+</main>
+
+<hr />
+
+<footer id="MainFooter">
+	
+	<p>Я создал этот сайт <time datetime="2018-08-13T18:07:54+07:00">13 августа 2018 года</time></p>
+	
+	<p id="WebSiteCounters">
+
+$if(HomePage)$
+		<a href="https://webmaster.yandex.ru/siteinfo/?host=www.%D0%BF%D0%B5%D1%80%D0%B4%D0%BE%D0%BB%D0%B8%D0%BA%D1%81.%D1%80%D1%84" title="Смотреть достижения сайта на Яднекс Вебмастере">
+			<img width="88" height="31" alt="Индекс качества сайта по мнению Яндекса равен 0" src="https://yandex.ru/cycounter?www.элзеур.рф&amp;theme=light&amp;lang=ru" />
+		</a>
+$endif$
+
+	</p>
+
+	<script>
+		var ImgLiveInternet=document.createElement("img");
+		ImgLiveInternet.src="https://counter.yadro.ru/hit?t16.6;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random();
+		ImgLiveInternet.alt="Логотип LiveInternet";
+		ImgLiveInternet.width=88;
+		ImgLiveInternet.height=31;
+		
+		var HrefLiveInternet=document.createElement("a");
+		HrefLiveInternet.href="https://www.liveinternet.ru/stat/элзеур.рф";
+		HrefLiveInternet.title="Смотреть статистику и счётчики посещений сайта на LiveInternet";
+		HrefLiveInternet.appendChild(ImgLiveInternet);
+		
+		var idL=document.getElementById("WebSiteCounters");
+		idL.appendChild(HrefLiveInternet);
+	</script>
+
+</footer>
+
+</body>
+</html>

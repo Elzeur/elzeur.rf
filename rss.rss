@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>ПЕРДОЛИКС</title>
+		<link>http://www.пердоликс.рф/</link>
+		<description>Микроблог mabu</description>
+		<language>ru</language>
+		
+		<item>
+			<pubDate>Sat, 20 Mar 2021 09:26:55 GMT</pubDate>
+			<title>Программисты и музыка</title>
+			<link>http://www.пердоликс.рф/finance/securities-portfolio.htm</link>
+			<description>Одна из типичных ошибок людей‐программистов: они слушают неправильную музыку. Музыку, которая не успокаивает и не даёт эмоциям выйти на волю, а только накручивает. Такие люди под хорошую музыку (Йозеф Гайдн, например) сразу засыпают. А когда они перестают под неё засыпать — это уже другие люди.</description>
+			<guid isPermaLink="false">{D7E71D1F-12BD-4D8E-8CB0-4458BC224496}</guid>
+		</item>
+		
+	</channel>
+</rss> 
